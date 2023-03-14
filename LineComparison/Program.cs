@@ -5,6 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("*****  Line Comparison Problems  *****");
+            Length length = new Length();
+            length.Compare();
         }
     }
 }
