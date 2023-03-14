@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace LineComparison
 {
-    // UC3- Calculating length of a line using JAVA COMPARETO METHOD.
-    internal class JavaMethod
+    internal class Java
     {
-        public void CompareTo()
+        public void Equals()
         {
             Console.Write("Enter the line point x1: ");
             int x1 = Convert.ToInt32(Console.ReadLine());
@@ -41,13 +40,11 @@ namespace LineComparison
             var Line2 = Math.Sqrt(Math.Pow(x4 - x3, 2) + Math.Pow(y4 - y3, 2));
             Console.WriteLine("Length of line2 is:" + Line2);
 
-            // comparing the length of line using JAVA COMPARETO METHOD.
-            if (Line1.CompareTo(Line2) > 0)
-                Console.WriteLine("Line 1 is greater than Line 2");
-            else if (Line2.CompareTo(Line1) > 0)
-                Console.WriteLine("Line 2 is greater than Line 1");
-            else
+            // comparing the length of line using JAVA EQUALS METHOD.
+            if (Line1.Equals(Line2))
                 Console.WriteLine("Length are Equals");
+            else
+                Console.WriteLine("Lengths are not equal");
         }
     }
 }
